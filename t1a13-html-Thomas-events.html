@@ -1,0 +1,71 @@
+
+<body onkeydown="{
+       document.getElementById('myDiv01')
+.innerHTML =  
+                'onkeydown event sent the letter '+String.fromCharCode(event.keyCode)
+  }">
+
+<h2 align=center>Events by Fred</h1>
+<ol>
+
+<li> type a key
+
+<li><input type=button value="onClick" onclick="{
+
+    
+    document.getElementById('myDiv01')
+.innerHTML =  'onClick event activated'
+  
+}">
+
+<li><input type=button value="onMouseOver" onMouseOver="{
+
+    
+    document.getElementById('myDiv01')
+.innerHTML =  'onMouseOver event activated'
+  
+}">
+
+
+
+
+
+<div id="myDiv01">...</div>
+
+
+
+
+
+
+
+<button onclick="myFunction()">Click me</button>
+object.onclick = function(){myScript};
+object.addEventListener("click", myScript);
+<p id="demo" onclick="myFunction()">Click me to change my text color.</p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").style.color = "red";
+}
+</script>
+
+<p onclick="myFunction(this, 'red')">Click me to change my text color.</p>
+
+<script>
+function myFunction(elmnt,clr) {
+    elmnt.style.color = clr;
+}
+</script>
+<button onclick="myFunction()">Copy Text</button>
+
+<script>
+function myFunction() {
+    document.getElementById("field2").value = document.getElementById("field1").value;
+}
+</script>
+window.onclick = myFunction;
+
+// set the background color of <body> to yellow
+function myFunction() {
+    document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
+}

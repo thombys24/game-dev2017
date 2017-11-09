@@ -1,0 +1,27 @@
+<h2 align=center>t1a05-if-Thomas</h2>
+enter a number: 
+<input id="myText01"  type=number  value=7> try 3, 8, 200
+<div id="myDiv01" style="font-size:40px; color:red;">....</div>
+<input type=button value="First" onClick="{
+  myNumber = document.getElementById('myText01').value
+  document.getElementById('myDiv01').innerHTML = ''
+
+
+
+  if (myNumber == 7)  {document.getElementById('myDiv01').innerHTML += 'You entered a 7<br>'}
+
+
+
+  if (myNumber < 9)  {document.getElementById('myDiv01').innerHTML += 'Less than 9<br>'}
+
+
+
+  if ( (myNumber < 3) || (myNumber > 20) ) {document.getElementById('myDiv01').innerHTML += 'Less than 3  or greater than 20<br>'}
+
+
+
+
+
+// get every if statement working   ! not      && is AND     || is OR
+
+}" >

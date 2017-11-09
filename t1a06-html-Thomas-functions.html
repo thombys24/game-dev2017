@@ -1,0 +1,15 @@
+<h2 align=center>t1a06-Functions-Thomas</h2>
+
+<script>
+function myCubeBetter(x){
+  return x*x*x
+}
+</script>
+
+<input id="myName01"  type=text value="3"  > 
+<div id="myDivOut01">....</div>
+
+<input type=button value="Cube the number" onClick="{  
+   document.getElementById('myDivOut01').innerHTML =  
+        myCubeBetter(document.getElementById('myName01').value);
+}" >

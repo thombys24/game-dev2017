@@ -1,0 +1,38 @@
+
+
+<script>
+// must view in chrome    
+    
+function myOb(x){
+        
+this.myX = x;
+        
+this.myFun = function(){
+            
+document.getElementById('myDiv').innerHTML = 'The object passed variable is ' + this.myX
+        
+}
+    
+}
+    
+    
+
+   
+ 
+</script>
+
+
+
+<input type=button value=click onclick="{
+
+    
+myObject = new myOb(8)
+    
+myObject.myFun()
+
+}">
+
+<div id="myDiv">...</div>
+
+
+$("target").insert(moveIt);
