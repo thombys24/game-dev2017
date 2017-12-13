@@ -1,0 +1,45 @@
+<input type=button value="Random Go" onClick="{
+  myX=0
+  myY=0
+
+  myCounter1 = setInterval(function(){
+    myX=Math.floor(Math.random()*6-1)
+    myY=Math.floor(Math.random()*6-1)
+ 
+    document.getElementById('myImage01').style.left= parseInt(document.getElementById('myImage01').style.left)+myX+'px'
+    document.getElementById('myImage01').style.top= parseInt(document.getElementById('myImage01').style.top)+myY+'px'
+
+
+
+    if(parseInt(document.getElementById('myImage01').style.left) <= 0)    {
+      document.getElementById('myImage01').style.left='10px'
+    }
+
+
+    if(parseInt(document.getElementById('myImage01').style.top) <= 0)    {
+         document.getElementById('myImage01').style.top='10px'
+    }
+
+
+    if(parseInt(document.getElementById('myImage01').style.left) >= 1200)    {
+      document.getElementById('myImage01').style.left='1200px'
+    }
+
+
+    if(parseInt(document.getElementById('myImage01').style.top) >= 900)    {
+         document.getElementById('myImage01').style.top='900px'
+    }
+
+
+
+
+
+
+
+
+
+    },30);  // every 30 milliseconds
+
+    }">
+
+    <img     id="myImage01"src="myNot2.png"style="position:absolute;top:20;left:10;width:30;height:40;">
